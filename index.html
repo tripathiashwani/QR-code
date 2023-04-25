@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height:100vh;
+    background-color: rgb(230, 238, 240);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.container{
+  background-color: rgb(149, 207, 232);
+  width: 24vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 5px  #969090;
+}
+.card{
+  background-color: white;
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.upper{
+  height: 50%;
+  background-image: url(images/image-qr-code.png);
+  position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 5px;
+ 
+}
+.down{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.p1{
+  font-weight: 900;
+  margin: 15px;
+}
+.p2{
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #a89797;
+}
+@media (max-width: 1200px) {
+  .container{
+    min-width: 80vw;
+  height: 85vh;
+  }
+  .card{
+   min-width:  70vw;
+  height: 90vh;
+  }
+}
+@media  (max-width: 1000px) {
+  .container{
+    min-width: 85vw;
+  height: 90vh;
+  }
+  .card{
+   min-width:  75vw;
+  height: 80vh;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+       
+        <div class="upper">
+          <!-- <h1>this is upper card</h1> -->
+         
+        </div>
+        <div class="down">
+          <p class="p1">improve your front-end skill by building projects</p>
+          <p class="p2">Scan the QR code to visit Frontend Mentor and take your coding skill to next level</p>
+        </div>
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ashwani Tripathi</a>.
+  </div> -->
+</body>
+</html>
